@@ -1,0 +1,24 @@
+
+<mat-card class="new_entry_form">
+  <div style="margin-left:27% ;">
+  <mat-form-field appearance="legacy">
+    <mat-label>Title</mat-label>
+    <input matInput [(ngModel)] = "newtitle">
+  </mat-form-field>
+
+  <mat-form-field appearance="legacy">
+    <mat-label>Date</mat-label>
+    <input matInput [(ngModel)] = "newdate">
+  </mat-form-field>
+  
+  <mat-form-field appearance="legacy">
+    <mat-label>Description</mat-label>
+    <input matInput [(ngModel)] = "newdesc">
+  </mat-form-field>
+  <br />
+</div>
+  <div style="margin-left: 43%;">
+  <button mat-raised-button color="accent" (click)="add_todo()">add Todo</button>
+</div>
+ 
+</mat-card>
